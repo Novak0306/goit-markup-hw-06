@@ -206,6 +206,7 @@ body {
     transform: translate(-50%, -50%) ;
     height: 609px;
     width: 450px;
+    z-index: 1;
    
    
 }
@@ -223,7 +224,7 @@ body {
     height: 609px;
     width: 450px;
     background-color: #fff;
-    z-index: 1;
+    
   
 }
 
