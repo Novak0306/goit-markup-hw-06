@@ -277,6 +277,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 100%;
     cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close {
@@ -287,7 +288,7 @@ body {
 
 .service_button_close:focus,
 .service_button_close:hover {
-    border: 1px solid #2196F3;
+   
     color: #2196F3;
 }
 
