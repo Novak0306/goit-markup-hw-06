@@ -47,9 +47,50 @@
         
     <main>
         <section class="service">
-             <div class="container-service">
+            <div class="container-service">
                 <h1 class="service-title">Эффективные решения <br>для вашего бизнеса</h1>
-                <button type="button" class="service_button">Заказать услугу</button>
+
+                <button data-modal-open type="button" class="service_button">Заказать услугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        
+                        <form class="form">
+                            <b class="title-form">Оставьте свои данные, мы вам перезвоним</b>
+
+                            <div class="form-field">
+                                <label for="name">Имя</label>
+                                <input type="text" name="name" id="name" placeholder="Имя">
+                            </div>
+                            <div class="form-field">
+                                <label for="tel">Телефон</label>
+                                <input type="tel" name="tel" id="tel" placeholder="Телефон">
+                            </div>
+                            <div class="form-field">
+                                <label for="mail">Почта</label>
+                                <input type="email" name="mail" id="mail" placeholder="Почта">
+                            </div>
+                            <div class="form-field">
+                                <label for="comment">Комментарий</label>
+                                <textarea name="comment" id="comment"  rows="10" placeholder="Комментарий"></textarea>  
+                            </div>
+                            
+                            <div class="form-field"></div>
+                                <input type="checkbox" name="agreements"  id="agreements">
+                                <label for="agreements">Соглашаюсь с рассылкой и принимаю Условия договора </label>
+                            </div>  
+                            <div class="">
+                                <button type="submit">Отправить</button>
+                            </div>
+
+                        </form>
+
+                    <button data-modal-close type="button" class="service_button_close">
+                        <svg class="icon-close">
+                            <use href="./images/close.svg"></use>
+                        </svg>
+                    </button>   
+                    </div>
+                </div>
             </div>
         </section>
             <section class="features">
@@ -397,5 +438,6 @@
          </div>
         </div>
      </footer>
+     <script src="./js/modal.js"></script>
 </body>
 </html>
