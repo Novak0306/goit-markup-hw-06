@@ -283,8 +283,8 @@ body {
     fill: currentColor;
 }
 
-.service_button_clos:focus,
-.service_button_clos:hover {
+.service_button_close:focus,
+.service_button_close:hover {
    
     color: #2196F3;
 }
