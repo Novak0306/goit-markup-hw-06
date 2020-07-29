@@ -328,11 +328,11 @@ body {
     top: 50%;
     left: 19px;
     transform: translateY(-50%);
-    background: #212121;
+    
 }
 
 .form-input:focus ~ .icon-form {
-    fill:currentColor;
+    fill:#2196F3;
    
 }
 
