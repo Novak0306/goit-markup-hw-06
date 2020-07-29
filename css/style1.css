@@ -229,15 +229,17 @@ body {
 }
 
 .form {
+    width: 370px;
     
     margin-left: auto;
     margin-right: auto;
-    padding: 40px;
+    padding-top: 40px;
+    
 
 }
 
 .form-field {
-    width: 370px;
+    position: relative;
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -267,7 +269,9 @@ body {
 }
 
 .service_button_close {
-    display: block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -291,6 +295,46 @@ body {
    
     color: #2196F3;
 }
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    transition: transform 250ms linear;
+
+}
+.form-input {
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+}
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    color:#2196F3;
+    transform: translateY(-50px);
+    left: 0px;
+}
+
+.icon-form {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+    background: #212121;
+}
+
+.form-input:focus ~ .icon-form {
+    color:#2196F3;
+    background: #2196F3;
+}
+
 
 .features {
     padding-top: 94px;
