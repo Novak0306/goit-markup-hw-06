@@ -320,6 +320,7 @@ body {
     color:#2196F3;
     transform: translateY(-50px);
     left: 0px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .icon-form {
@@ -331,8 +332,8 @@ body {
 }
 
 .form-input:focus ~ .icon-form {
-    color:#2196F3;
-    background: #2196F3;
+    fill:currentColor;
+   
 }
 
 
