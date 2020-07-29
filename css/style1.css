@@ -333,7 +333,7 @@ body {
 }
 
 .form-input:focus ~ .icon-form {
-    fill:#2196F3;
+    fill:CurrentColor;
    
 }
 
