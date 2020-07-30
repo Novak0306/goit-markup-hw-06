@@ -208,11 +208,12 @@ body {
     width: 100%;
     z-index: 1;
     opacity: 1;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2 , 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2 , 1);
    
 }
 
 .backdrop.is-hidden {
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
 
@@ -380,7 +381,7 @@ body {
 }
 
 .form-input:focus ~ .icon-form {
-    fill:CurrentColor;
+    fill:#2196F3;
    
 }
 
@@ -710,6 +711,7 @@ body {
 
 .container-flex {
     display: flex;
+  
     
 }
 
@@ -806,8 +808,69 @@ body {
 .footer-social-links:hover{
     color: #FFFFFF;
     background-color:  #2196F3;
-
 }
+
+/*Форма mail*/
+.form-subscribe {
+    display: flex;
+    margin-left: 94px;
+    padding-top: 72px;
+  }
+
+  .container-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+.container-field  b {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.subscribe-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background-color: #2F303A;
+  }
+
+ .subscribe-input[placeholder] {
+    font-size: 16px;
+    line-height: 1.87;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+  }
+  
+  .button-subscribe {
+    margin-top: 36px;
+    margin-left: 12px;
+    padding: 10px 28px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: #2196F3;
+    cursor: pointer;
+  }
+  
+  
+
+
+  /*  Портфолио */
+
 .portfolio_projects a {
     text-decoration: none;
 }
