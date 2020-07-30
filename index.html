@@ -51,51 +51,7 @@
                 <h1 class="service-title">Эффективные решения <br>для вашего бизнеса</h1>
 
                 <button data-modal-open type="button" class="service_button">Заказать услугу</button>
-                <div class="backdrop is-hidden" data-modal>
-                    <div class="modal">
-                        
-                        <form class="form" autocomplete="off">
-                            <b class="title-form">Оставьте свои данные, мы вам перезвоним</b>
-
-                            <div class="form-field">
-                              
-                                <input type="text" name="name" id="name" class="form-input" placeholder=" ">
-                                <label for="name" class="form-label">Имя</label>
-                                <svg class="icon-form" width="12" height="12">
-                                    <use href="./images/sprite.svg#icon-name-form"></use>
-                                </svg>
-                            </div>
-                            <div class="form-field">
-                                <input type="tel" name="tel" id="tel" class="form-input" placeholder=" ">
-                                <label for="tel" class="form-label">Телефон</label>
-                                
-                            </div>
-                            <div class="form-field">
-                                <input type="email" name="mail" id="mail" class="form-input" placeholder=" ">
-                                <label for="mail" class="form-label">Почта</label>
-                                
-                            </div>
-                            <div class="form-field">
-                                <label for="comment">Комментарий</label>
-                                <textarea name="comment" id="comment"  rows="10" placeholder="Комментарий"></textarea>  
-                            </div>
-                            
-                            <div class="form-field"></div>
-                                <input type="checkbox" name="agreements"  id="agreements">
-                                <label for="agreements">Соглашаюсь с рассылкой и принимаю Условия договора </label>
-                            </div>  
-                            <div class="">
-                                <button type="submit">Отправить</button>
-                            </div>
-
-                        </form>
-
-                    <button data-modal-close type="button" class="service_button_close">
-                        <svg class="icon-close">
-                            <use href="./images/sprite.svg#icon-close"></use>
-                        </svg>
-                    </button>   
-                    </div>
+                
                 </div>
             </div>
         </section>
@@ -444,6 +400,62 @@
          </div>
         </div>
      </footer>
+     <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            
+                <form class="form" autocomplete="off">
+                    <button data-modal-close type="button" class="service_button_close">
+                        <svg class="icon-close">
+                            <use href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+
+                    <b class="title-form">Оставьте свои данные, мы вам перезвоним</b>
+
+                    <div class="form-field">
+                    
+                        <input type="text" name="name" id="name" class="form-input" placeholder=" ">
+                        <label for="name" class="form-label">Имя</label>
+                        <svg class="icon-form" width="12" height="12">
+                            <use href="./images/sprite.svg#icon-name-form"></use>
+                        </svg>
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" name="tel" id="tel" class="form-input" placeholder=" ">
+                        <label for="tel" class="form-label">Телефон</label>
+                        
+                    </div>
+                    <div class="form-field">
+                        <input type="email" name="mail" id="mail" class="form-input" placeholder=" ">
+                        <label for="mail" class="form-label">Почта</label>
+                        
+                    </div>
+                    <div class="form-field-comment">
+                       
+                        <textarea name="comment" id="comment"  class="form-textarea" placeholder=" "></textarea>  
+                        <label for="comment" class="form-label-textarea">Комментарий</label>
+                    </div>
+
+                    <div class="form-field-checkbox">
+                        <input type="checkbox" id="agreements" name="agreements" class="checkbox-input">
+
+                        <label for="agreements" class="checkbox-label">
+                            <span class="form-agreements"> Соглашаюсь с рассылкой и принимаю 
+                                <a href="">Условия договора </a>
+                            </span>   
+                        </label>
+                    </div>  
+                    <div class="modal-submit">
+                        <button type="submit" class="button-modal-submit">Отправить</button>
+                    </div>
+        </div>  
+                   
+                       
+
+                </form>
+
+            
+        </div>
      <script src="./js/modal.js"></script>
 </body>
 </html>
