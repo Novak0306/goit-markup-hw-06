@@ -285,7 +285,7 @@ body {
 }
 
 .form-textarea:focus {
-    border: 1px solid #2196F3;
+    outline: 1px solid #2196F3;
     cursor: pointer;
 }
 
@@ -363,7 +363,7 @@ body {
 }
 
 .form-input:focus {
-    border: 1px solid #2196F3;
+    outline: 1px solid #2196F3;
     cursor: pointer;
 }
 
