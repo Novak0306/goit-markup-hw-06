@@ -24,6 +24,9 @@ body {
  .top-line {
     display: flex;
     align-items: center;
+    width: 1600px;
+    
+    border-bottom: 1px solid #ECECEC;
    }
 
 
@@ -151,7 +154,7 @@ body {
 
 /*   Style main                               */
 .service {
-    width: 1600px;
+    max-width: 1600px;
     text-align: center;
     height: 600px;
     margin-left: auto;
@@ -414,9 +417,9 @@ body {
 .checkbox-label::before {
     content: "";
     display: flex;
+
     position: absolute;
-    top: 3;
-    left: 12;
+    
     width: 16px;
     height: 15px;
     
